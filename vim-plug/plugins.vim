@@ -28,7 +28,10 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 
 Plug 'dart-lang/dart-vim-plugin'
-Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/tagbar'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-surround'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 call plug#end()

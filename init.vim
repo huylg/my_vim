@@ -17,7 +17,6 @@ nnoremap <esc> :noh<return><esc>
 nmap <F2> :NERDTreeToggle<CR>
 noremap <S-u> :u<CR>
 set mouse=a
-noremap <C-s> :w<CR>
 let g:user_emmet_install_global = 0
 set clipboard=unnamed
 nmap <C-_>   <Plug>NERDCommenterToggle
@@ -54,3 +53,11 @@ let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
 set tabstop=4
 hi Pmenu ctermbg=black ctermfg=white
 colorscheme gruvbox
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+let g:lsc_auto_map = v:true
+let g:dart_format_on_save = 1
+
