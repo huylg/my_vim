@@ -58,6 +58,5 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-let g:lsc_auto_map = v:true
 let g:dart_format_on_save = 1
 
