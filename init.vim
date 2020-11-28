@@ -58,5 +58,5 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-let g:dart_format_on_save = 1
-
+"let g:dart_format_on_save = 1
+nnoremap <F4> :set relativenumber!<CR>
