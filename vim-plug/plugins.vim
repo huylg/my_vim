@@ -34,5 +34,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
+Plug 'chiel92/vim-autoformat'
+Plug 'thosakwe/vim-flutter'
+Plug 'mileszs/ack.vim'
 
 call plug#end()

@@ -50,7 +50,6 @@ nnoremap <s-t> :call TermToggle()<CR>
 nnoremap <F8> :TagbarToggle<CR>
 
 let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
-set tabstop=4
 hi Pmenu ctermbg=black ctermfg=white
 colorscheme gruvbox
 nmap <silent> gd <Plug>(coc-definition)
@@ -60,3 +59,18 @@ nmap <silent> gr <Plug>(coc-references)
 
 "let g:dart_format_on_save = 1
 nnoremap <F4> :set relativenumber!<CR>
+
+nnoremap fa :FlutterRun<cr>
+nnoremap fq :FlutterQuit<cr>
+nnoremap fr :FlutterHotReload<cr>
+nnoremap fR :FlutterHotRestart<cr>
+nnoremap fD :FlutterVisualDebug<cr>
+
+nnoremap <C-Left> :tabprevious<CR>                                                                            
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-j> :tabprevious<CR>                                                                            
+nnoremap <C-k> :tabnext<CR>
+nnoremap <C-q> :q<CR>
+
+let g:dart_format_on_save = 1
+
