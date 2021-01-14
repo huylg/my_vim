@@ -66,11 +66,18 @@ nnoremap fr :FlutterHotReload<cr>
 nnoremap fR :FlutterHotRestart<cr>
 nnoremap fD :FlutterVisualDebug<cr>
 
-nnoremap <C-Left> :tabprevious<CR>                                                                            
-nnoremap <C-Right> :tabnext<CR>
-nnoremap <C-j> :tabprevious<CR>                                                                            
-nnoremap <C-k> :tabnext<CR>
 nnoremap <C-q> :q<CR>
 
 let g:dart_format_on_save = 1
 
+if executable('sourcekit-lsp')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'sourcekit-lsp',
+        \ 'cmd': {server_info->['sourcekit-lsp']},
+        \ 'whitelist': ['swift'],
+        \ })
+endif
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
+
+let b:coc_diagnostic_disable = 1

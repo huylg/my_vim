@@ -29,7 +29,7 @@ Plug 'vim-syntastic/syntastic'
 
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'preservim/tagbar'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
 Plug 'natebosch/vim-lsc'
@@ -37,5 +37,8 @@ Plug 'natebosch/vim-lsc-dart'
 Plug 'chiel92/vim-autoformat'
 Plug 'thosakwe/vim-flutter'
 Plug 'mileszs/ack.vim'
-
+Plug 'airblade/vim-gitgutter'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'coreyja/fzf.devicon.vim'
 call plug#end()
