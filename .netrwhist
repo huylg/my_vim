@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/hlg/elca/project/tyxr-app/lib'
+let g:netrw_dirhist_2='/Users/hlg/elca/project/testing/appium-flutter-driver/example/flutter_app_under_test/lib'
 let g:netrw_dirhist_1='/Users/hlg/.config/nvim'
