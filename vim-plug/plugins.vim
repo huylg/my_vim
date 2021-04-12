@@ -8,34 +8,21 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-" Better Syntax Support
-"Plug 'sheerun/vim-polyglot'
-" File Explorer
 Plug 'preservim/nerdtree'
-" Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'"
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'szw/vim-maximizer'
-"Plug 'mattn/emmet-vim'
-" post install (yarn install | npm install) then load plugin only for editing supported files
-"Plug 'eslint/eslint'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
-"Plug 'vim-syntastic/syntastic'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'preservim/tagbar'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
-Plug 'natebosch/vim-lsc'
-Plug 'natebosch/vim-lsc-dart'
-"Plug 'mileszs/ack.vim'
+"Plug 'natebosch/vim-lsc'
+"Plug 'natebosch/vim-lsc-dart'
 Plug 'airblade/vim-gitgutter'
-"Plug 'prabirshrestha/async.vim'
-"Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'akinsho/dependency-assist.nvim'
@@ -53,4 +40,5 @@ Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'skywind3000/vim-preview'
 Plug 'mkitt/tabline.vim'
+Plug 'brooth/far.vim'
 call plug#end()
