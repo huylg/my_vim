@@ -4,10 +4,12 @@ source $HOME/.config/nvim/telescope_setup/telescope_setup.vim
 source $HOME/.config/nvim/NERD_setup/NERD_setup.vim
 source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
+source $HOME/.config/nvim/tabline_setup/tabline_setup.vim
+source $HOME/.config/nvim/limelight_setup/limelight_setup.vim
 " load dependency_assist
 lua << EOF
-require'dependency_assist'.setup{}
-require('telescope').setup{}
+  require'dependency_assist'.setup{}
+  require'telescope'.setup{}
 EOF
 
 " esc quit terminal mode
@@ -31,11 +33,22 @@ endfunction
 nnoremap <s-t> :call TermToggle()<CR>
 nnoremap <F9> :TagbarToggle<CR>
 
+let g:floaterm_position = 'auto'
+let g:floaterm_height = 0.6
+let g:floaterm_width = 0.6
+nnoremap <F5>    :FloatermNew<CR>
+tnoremap <F5>    <C-\><C-n>:FloatermNew<CR>
+nnoremap <F6>    :FloatermPrev<CR>
+tnoremap <F6>    <C-\><C-n>:FloatermPrev<CR>
+nnoremap <F7>    :FloatermNext<CR>
+tnoremap <F7>    <C-\><C-n>:FloatermNext<CR>
+nnoremap <F8>   :FloatermToggle<CR>
+tnoremap <F8>   <C-\><C-n>:FloatermToggle<CR>
+
 let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
 
 
 nnoremap <F4> :set relativenumber!<CR>
-
 
 let g:dart_format_on_save = 1
 
@@ -56,7 +69,6 @@ set t_Co=256
 colorscheme codedark
 let g:airline_theme = 'codedark'
 
-
 " shortcut for save
 noremap <Leader>s :update<CR>
 
@@ -75,4 +87,5 @@ vnoremap <leader>p "_dP
 source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 
 set spelllang=en
-nnoremap <silent> <F12> :set spell!<cr>
+nnoremap <F12> :set spell!<cr>
+

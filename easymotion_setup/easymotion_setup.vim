@@ -29,13 +29,13 @@ map z? <Plug>(incsearch-fuzzy-?)
 map zg/ <Plug>(incsearch-fuzzy-stay)
 
 " F5 will find the next occurrence after vimgrep
-map <F5> :cp!<CR>
+"map en :cp!<CR>
 " F6 will find the previous occurrence after vimgrep
-map <F6> :cn!<CR>
+"map <silent> ep :cn!<CR>
 " F7 search for Word under the cursor recursively , :copen , to close -> :ccl
-nnoremap <F7> :vim // %<CR>:botright copen <CR>
+"nnoremap <silent> o :vim // %<CR>:botright copen <CR>
 " F8 close quick fix window
-nnoremap <F8> :ccl<CR>
+"nnoremap <silent> ec :ccl<CR>
 
 " esc will unselect text
 nnoremap <esc> :nohl<return><esc>
