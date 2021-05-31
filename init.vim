@@ -18,6 +18,7 @@ tnoremap <Esc> <C-\><C-n>
 set number
 
 nnoremap <silent><F3> :MaximizerToggle<CR>
+tnoremap <silent><F3> <C-\><C-n>:MaximizerToggle<CR>
 vnoremap <silent><F3> :MaximizerToggle<CR>gv
 inoremap <silent><F3> <C-o>:MaximizerToggle<CR>
 
@@ -30,8 +31,20 @@ function! TermToggle()
     startinsert
 endfunction
 
+function! Yrp()
+     let @+ = expand("%")
+endfunction
+
+function! Yfp()
+     let @+ = expand("%")
+endfunction
+
+function! Yfn()
+     let @+ = expand("%")
+endfunction
+
 nnoremap <s-t> :call TermToggle()<CR>
-nnoremap <F9> :TagbarToggle<CR>
+"nnoremap <F9> :TagbarToggle<CR>
 
 let g:floaterm_position = 'auto'
 let g:floaterm_height = 0.6
@@ -68,7 +81,6 @@ set relativenumber
 set t_Co=256
 colorscheme codedark
 let g:airline_theme = 'codedark'
-
 " shortcut for save
 noremap <Leader>s :update<CR>
 
@@ -88,4 +100,5 @@ source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 
 set spelllang=en
 nnoremap <F12> :set spell!<cr>
+
 

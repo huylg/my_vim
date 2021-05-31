@@ -44,12 +44,13 @@ Plug 'Neevash/awesome-flutter-snippets'
 " dart
 Plug 'dart-lang/dart-vim-plugin'
 
+" outline
+"Plug 'preservim/tagbar'
+
 Plug 'szw/vim-maximizer'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
-Plug 'preservim/tagbar'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'prabirshrestha/vim-lsp'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'akinsho/dependency-assist.nvim'
@@ -59,5 +60,4 @@ Plug 'brooth/far.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'psliwka/vim-smoothie'
 Plug 'sindrets/diffview.nvim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()

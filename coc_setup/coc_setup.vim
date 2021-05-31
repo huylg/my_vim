@@ -175,4 +175,4 @@ nnoremap fr :CocCommand flutter.dev.hotReload<cr>
 nnoremap fR :CocCommand flutter.dev.hotRestart<cr>
 nnoremap fc :CocCommand flutter.dev.clearDevLog<cr>
 nnoremap fd :CocCommand flutter.dev.detach<cr>
-nnoremap <F10> :CocCommand flutter.toggleOutline<cr>
+"nnoremap <F10> :CocCommand flutter.toggleOutline<cr>
