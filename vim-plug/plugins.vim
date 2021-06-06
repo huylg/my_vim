@@ -10,6 +10,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 " File Tree
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Surrounding
 Plug 'jiangmiao/auto-pairs'
