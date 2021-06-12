@@ -10,6 +10,16 @@ source $HOME/.config/nvim/limelight_setup/limelight_setup.vim
 lua << EOF
   require'dependency_assist'.setup{}
   require'telescope'.setup{}
+  require'nvim-web-devicons'.setup {
+  override = {
+   zsh = {
+     icon = "",
+     color = "#428850",
+     name = "Zsh"
+   }
+  };
+  default = true;
+  }
 EOF
 
 " esc quit terminal mode
@@ -29,6 +39,10 @@ set clipboard=unnamed
 function! TermToggle()
     vsplit term://zsh
     startinsert
+endfunction
+
+function! Jq()
+	%!jq
 endfunction
 
 function! Yrp()

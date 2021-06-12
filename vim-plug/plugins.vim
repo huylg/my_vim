@@ -60,5 +60,6 @@ Plug 'mkitt/tabline.vim'
 Plug 'brooth/far.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'psliwka/vim-smoothie'
-Plug 'sindrets/diffview.nvim'
+
+Plug 'diepm/vim-rest-console'
 call plug#end()
