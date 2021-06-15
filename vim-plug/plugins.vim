@@ -16,8 +16,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
-" Theme
+" color Theme
 Plug 'tomasiser/vim-code-dark'
+
 " Search File
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -28,6 +29,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'brooth/far.vim'
 
 " devicons
 Plug 'ryanoasis/vim-devicons'
@@ -37,29 +39,48 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
+Plug 'tpope/vim-fugitive'
+Plug 'tommcdo/vim-fubitive'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
 " snippets
 Plug 'honza/vim-snippets'
 Plug 'Neevash/awesome-flutter-snippets'
-
 " dart
 Plug 'dart-lang/dart-vim-plugin'
 
-" outline
-"Plug 'preservim/tagbar'
-
-Plug 'szw/vim-maximizer'
+" LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdcommenter'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" tab bar
+Plug 'mkitt/tabline.vim'
+
+" airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'akinsho/dependency-assist.nvim'
-Plug 'skywind3000/vim-preview'
-Plug 'mkitt/tabline.vim'
-Plug 'brooth/far.vim'
-Plug 'voldikss/vim-floaterm'
+
+" http client
+Plug 'baverman/vial'
+Plug 'baverman/vial-http'
+
+" ctrl p
+Plug 'ctrlpvim/ctrlp.vim'
+
+" undo tree
+Plug 'mbbill/undotree'
+
+" welcome screen
+Plug 'glepnir/dashboard-nvim'
+
+" maximize term quick;y
+Plug 'szw/vim-maximizer'
+
+" Toggle comment code with shortcut
+Plug 'preservim/nerdcommenter'
+
+" Scroll moothie
 Plug 'psliwka/vim-smoothie'
 
-Plug 'diepm/vim-rest-console'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'voldikss/vim-floaterm'
 call plug#end()

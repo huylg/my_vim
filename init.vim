@@ -1,14 +1,13 @@
-set termguicolors
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/telescope_setup/telescope_setup.vim
 source $HOME/.config/nvim/NERD_setup/NERD_setup.vim
 source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
 source $HOME/.config/nvim/tabline_setup/tabline_setup.vim
-source $HOME/.config/nvim/limelight_setup/limelight_setup.vim
+source $HOME/.config/nvim/far_setup/far_setup.vim
+source $HOME/.config/nvim/dashboard_setup/dashboard_setup.vim
 " load dependency_assist
 lua << EOF
-  require'dependency_assist'.setup{}
   require'telescope'.setup{}
   require'nvim-web-devicons'.setup {
   override = {
@@ -21,6 +20,12 @@ lua << EOF
   default = true;
   }
 EOF
+
+
+set termguicolors
+"syntax on
+colorscheme codedark
+let g:airline_theme='codedark'
 
 " esc quit terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -41,24 +46,33 @@ function! TermToggle()
     startinsert
 endfunction
 
+function! Jid()
+    write .temp.json
+    vsplit
+    term cat .temp.json | jid . | jq
+    startinsert
+endfunction
+command Jid call Jid()
+
 function! Jq()
 	%!jq
 endfunction
+command Jq call Jq()
 
 function! Yrp()
      let @+ = expand("%")
 endfunction
 
 function! Yfp()
-     let @+ = expand("%")
+     let @+ = expand("%:p")
 endfunction
 
 function! Yfn()
-     let @+ = expand("%")
+     let @+ = expand("%:t")
 endfunction
 
 nnoremap <s-t> :call TermToggle()<CR>
-"nnoremap <F9> :TagbarToggle<CR>
+nnoremap <F9> :UndotreeToggle<CR>
 
 let g:floaterm_position = 'auto'
 let g:floaterm_height = 0.6
@@ -73,9 +87,6 @@ nnoremap <F8>   :FloatermToggle<CR>
 tnoremap <F8>   <C-\><C-n>:FloatermToggle<CR>
 
 let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
-
-
-nnoremap <F4> :set relativenumber!<CR>
 
 let g:dart_format_on_save = 1
 
@@ -92,9 +103,7 @@ augroup END
 
 set relativenumber
 
-set t_Co=256
-colorscheme codedark
-let g:airline_theme = 'codedark'
+
 " shortcut for save
 noremap <Leader>s :update<CR>
 
@@ -107,6 +116,8 @@ nnoremap te :tabnew .<CR>
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
+command GuiToogle set termguicolors!
+
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dP
@@ -115,4 +126,17 @@ source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 set spelllang=en
 nnoremap <F12> :set spell!<cr>
 
+let g:fubitive_domain_pattern = 'bitbucket.svc.elca.ch'
+let g:fugitive_gitlab_domains = ['https://my.gitlab.com']
 
+let g:vrc_curl_opts = {
+  \ '-sS': '',
+  \ '--connect-timeout': 10,
+  \ '-i': '',
+  \ '--max-time': 60,
+  \ '-k': '',
+\}
+set hidden
+filetype plugin on
+
+" Default value is clap

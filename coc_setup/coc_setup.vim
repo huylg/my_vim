@@ -87,8 +87,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>fm  <Plug>(coc-format-selected)
+nmap <leader>fm  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -167,12 +167,12 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "shortcut for flutter command
-noremap fa :CocCommand flutter.run
-nnoremap fA :CocCommand flutter.attach<cr>
-nnoremap fq :CocCommand flutter.dev.quit<cr>
-nnoremap fv :CocCommand flutter.dev.openDevLog<cr>
-nnoremap fr :CocCommand flutter.dev.hotReload<cr>
-nnoremap fR :CocCommand flutter.dev.hotRestart<cr>
-nnoremap fc :CocCommand flutter.dev.clearDevLog<cr>
-nnoremap fd :CocCommand flutter.dev.detach<cr>
+nnoremap <leader>fa :CocCommand flutter.run
+nnoremap <leader>fA :CocCommand flutter.attach<cr>
+nnoremap <leader>fq :CocCommand flutter.dev.quit<cr>
+nnoremap <leader>fv :CocCommand flutter.dev.openDevLog<cr>
+nnoremap <leader>fr :CocCommand flutter.dev.hotReload<cr>
+nnoremap <leader>fR :CocCommand flutter.dev.hotRestart<cr>
+nnoremap <leader>fc :CocCommand flutter.dev.clearDevLog<cr>
+nnoremap <leader>fd :CocCommand flutter.dev.detach<cr>
 "nnoremap <F10> :CocCommand flutter.toggleOutline<cr>
