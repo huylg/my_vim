@@ -69,9 +69,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 " undo tree
 Plug 'mbbill/undotree'
 
-" welcome screen
-Plug 'glepnir/dashboard-nvim'
-
 " maximize term quick;y
 Plug 'szw/vim-maximizer'
 
@@ -81,6 +78,10 @@ Plug 'preservim/nerdcommenter'
 " Scroll moothie
 Plug 'psliwka/vim-smoothie'
 
+" multi cursor
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" float tearminal``
 Plug 'voldikss/vim-floaterm'
+
 call plug#end()

@@ -1,3 +1,4 @@
+set termguicolors
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/telescope_setup/telescope_setup.vim
 source $HOME/.config/nvim/NERD_setup/NERD_setup.vim
@@ -5,7 +6,7 @@ source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
 source $HOME/.config/nvim/tabline_setup/tabline_setup.vim
 source $HOME/.config/nvim/far_setup/far_setup.vim
-source $HOME/.config/nvim/dashboard_setup/dashboard_setup.vim
+
 " load dependency_assist
 lua << EOF
   require'telescope'.setup{}
@@ -21,16 +22,8 @@ lua << EOF
   }
 EOF
 
-
-set termguicolors
-"syntax on
-colorscheme codedark
-let g:airline_theme='codedark'
-
 " esc quit terminal mode
 tnoremap <Esc> <C-\><C-n>
-
-set number
 
 nnoremap <silent><F3> :MaximizerToggle<CR>
 tnoremap <silent><F3> <C-\><C-n>:MaximizerToggle<CR>
@@ -101,7 +94,12 @@ augroup CustomCursorLine
     au ColorScheme * :hi! CursorLine gui=underline cterm=underline
 augroup END
 
+set number
 set relativenumber
+
+set t_Co=256
+colorscheme codedark
+let g:airline_theme='codedark'
 
 
 " shortcut for save
