@@ -55,14 +55,17 @@ command Jq call Jq()
 function! Yrp()
      let @+ = expand("%")
 endfunction
+command Yrp call Yrp()
 
 function! Yfp()
      let @+ = expand("%:p")
 endfunction
+command Yfp call Yfp()
 
 function! Yfn()
      let @+ = expand("%:t")
 endfunction
+command Yfn call Yfn()
 
 nnoremap <s-t> :call TermToggle()<CR>
 nnoremap <F9> :UndotreeToggle<CR>
@@ -136,5 +139,3 @@ let g:vrc_curl_opts = {
 \}
 set hidden
 filetype plugin on
-
-" Default value is clap
