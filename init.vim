@@ -6,6 +6,7 @@ source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
 source $HOME/.config/nvim/tabline_setup/tabline_setup.vim
 source $HOME/.config/nvim/far_setup/far_setup.vim
+source $HOME/.config/nvim/test_vim_setup/test_vim_setup.vim
 
 " load dependency_assist
 lua << EOF

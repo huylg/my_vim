@@ -83,5 +83,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " float tearminal``
 Plug 'voldikss/vim-floaterm'
-
+" test vim
+Plug 'vim-test/vim-test'
 call plug#end()
