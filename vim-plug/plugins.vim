@@ -42,10 +42,12 @@ Plug 'f-person/git-blame.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'tommcdo/vim-fubitive'
 Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'rhysd/git-messenger.vim'
 
 " snippets
 Plug 'honza/vim-snippets'
 Plug 'Neevash/awesome-flutter-snippets'
+
 " dart
 Plug 'dart-lang/dart-vim-plugin'
 
@@ -69,9 +71,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 " undo tree
 Plug 'mbbill/undotree'
 
-" maximize term quick;y
-Plug 'szw/vim-maximizer'
-
 " Toggle comment code with shortcut
 Plug 'preservim/nerdcommenter'
 
@@ -83,6 +82,14 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " float tearminal``
 Plug 'voldikss/vim-floaterm'
+
 " test vim
 Plug 'vim-test/vim-test'
+
+" maximize term quick;y
+Plug 'szw/vim-maximizer'
+
+" window resize
+Plug 'simeji/winresizer'
+
 call plug#end()

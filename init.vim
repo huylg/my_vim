@@ -124,6 +124,7 @@ command GuiToogle set termguicolors!
 " without yanking it
 vnoremap <leader>p "_dP
 source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
+source $HOME/.config/nvim/git_messenger_setup/git_messenger_setup.vim
 
 set spelllang=en
 nnoremap <F12> :set spell!<cr>
