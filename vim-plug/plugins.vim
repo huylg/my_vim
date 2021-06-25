@@ -50,7 +50,8 @@ Plug 'Neevash/awesome-flutter-snippets'
 
 " dart
 Plug 'dart-lang/dart-vim-plugin'
-
+Plug 'akinsho/dependency-assist.nvim'
+			
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

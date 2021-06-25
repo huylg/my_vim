@@ -10,6 +10,7 @@ source $HOME/.config/nvim/test_vim_setup/test_vim_setup.vim
 
 " load dependency_assist
 lua << EOF
+  require'dependency_assist'.setup{}
   require'telescope'.setup{}
   require'nvim-web-devicons'.setup {
   override = {

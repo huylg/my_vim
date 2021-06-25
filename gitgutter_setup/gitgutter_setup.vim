@@ -15,3 +15,5 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 nmap <F4> :GitGutterLineHighlightsToggle<cr> :GitGutterLineNrHighlightsToggle<cr>
+
+highlight DiffDelete guifg=White
