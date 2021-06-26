@@ -76,7 +76,7 @@ Plug 'mbbill/undotree'
 Plug 'preservim/nerdcommenter'
 
 " Scroll moothie
-Plug 'psliwka/vim-smoothie'
+"Plug 'psliwka/vim-smoothie'
 
 " multi cursor
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}

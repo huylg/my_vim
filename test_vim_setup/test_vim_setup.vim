@@ -6,4 +6,4 @@ nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 
 " make test commands execute using dispatch.vim
-let test#strategy = "default"
+let test#strategy = "neovim"
