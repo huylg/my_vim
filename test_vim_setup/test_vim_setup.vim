@@ -5,5 +5,8 @@ nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 
-" make test commands execute using dispatch.vim
-let test#strategy = "neovim"
+" make test commands execute using floaterm
+let test#strategy = "floaterm"
+
+" move flutter test to fvm
+let test#dart#fluttertest#executable = 'fvm flutter test'
