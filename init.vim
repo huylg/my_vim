@@ -12,6 +12,7 @@ source $HOME/.config/nvim/test_vim_setup/test_vim_setup.vim
 lua << EOF
   require'dependency_assist'.setup{}
   require'telescope'.setup{}
+  require('telescope').load_extension('coc')
   require'nvim-web-devicons'.setup {
   override = {
    zsh = {
@@ -102,7 +103,7 @@ tnoremap <F7>    <C-\><C-n>:FloatermNext<CR>
 nnoremap <F8>   :FloatermToggle<CR>
 tnoremap <F8>   <C-\><C-n>:FloatermToggle<CR>
 
-let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
+"let g:tagbar_type_dart = { 'ctagsbin': '~/flutter/.pub-cache/bin/dart_ctags' }
 
 let g:dart_format_on_save = 1
 

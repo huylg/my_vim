@@ -55,6 +55,9 @@ Plug 'akinsho/dependency-assist.nvim'
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" telescope coc integration
+Plug 'fannheyward/telescope-coc.nvim'
+
 " debug plugin
 Plug 'mfussenegger/nvim-dap'
 
