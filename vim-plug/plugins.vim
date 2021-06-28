@@ -52,8 +52,11 @@ Plug 'Neevash/awesome-flutter-snippets'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'akinsho/dependency-assist.nvim'
 			
-" LSP
+" coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" debug plugin
+Plug 'mfussenegger/nvim-dap'
 
 " tab bar
 Plug 'mkitt/tabline.vim'
@@ -66,17 +69,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'baverman/vial'
 Plug 'baverman/vial-http'
 
-" ctrl p
-Plug 'ctrlpvim/ctrlp.vim'
-
 " undo tree
 Plug 'mbbill/undotree'
 
 " Toggle comment code with shortcut
 Plug 'preservim/nerdcommenter'
-
-" Scroll moothie
-"Plug 'psliwka/vim-smoothie'
 
 " multi cursor
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -87,7 +84,7 @@ Plug 'voldikss/vim-floaterm'
 " test vim
 Plug 'vim-test/vim-test'
 
-" maximize term quick;y
+" maximize term quickly
 Plug 'szw/vim-maximizer'
 
 " window resize
