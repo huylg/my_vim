@@ -40,8 +40,6 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
 Plug 'tpope/vim-fugitive'
-Plug 'tommcdo/vim-fubitive'
-Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'rhysd/git-messenger.vim'
 
 " snippets
@@ -54,12 +52,7 @@ Plug 'akinsho/dependency-assist.nvim'
 			
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" telescope coc integration
 Plug 'fannheyward/telescope-coc.nvim'
-
-" debug plugin
-Plug 'mfussenegger/nvim-dap'
 
 " tab bar
 Plug 'mkitt/tabline.vim'
