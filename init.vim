@@ -4,18 +4,19 @@ source $HOME/.config/nvim/telescope_setup/telescope_setup.vim
 source $HOME/.config/nvim/NERD_setup/NERD_tree_setup.vim
 source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
-source $HOME/.config/nvim/tabline_setup/tabline_setup.vim
+source $HOME/.config/nvim/barbar_setup/barbar_setup.vim
 source $HOME/.config/nvim/far_setup/far_setup.vim
 source $HOME/.config/nvim/test_vim_setup/test_vim_setup.vim
 source $HOME/.config/nvim/float_term_setup/float_term_setup.vim
 source $HOME/.config/nvim/maximizer_setup/maximizer_setup.vim
 source $HOME/.config/nvim/undotree_setup/undotree_setup.vim
 source $HOME/.config/nvim/rest_console_setup/rest_console_setup.vim
+source $HOME/.config/nvim/cursor_line.vim
 source $HOME/.config/nvim/color_scheme.vim
 source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 source $HOME/.config/nvim/git_messenger_setup/git_messenger_setup.vim
+"source $HOME/.config/nvim/dap_setup/dap_setup.vim
 
-" load dependency_assist
 lua << EOF
   require'dependency_assist'.setup{}
   require'telescope'.setup{}

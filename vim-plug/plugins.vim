@@ -55,7 +55,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fannheyward/telescope-coc.nvim'
 
 " tab bar
-Plug 'mkitt/tabline.vim'
+Plug 'romgrk/barbar.nvim'
 
 " airline
 Plug 'vim-airline/vim-airline'
@@ -86,4 +86,6 @@ Plug 'szw/vim-maximizer'
 " window resize
 Plug 'simeji/winresizer'
 
+" debug 
+"Plug 'mfussenegger/nvim-dap'
 call plug#end()
