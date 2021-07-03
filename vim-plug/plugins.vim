@@ -18,7 +18,6 @@ Plug 'tpope/vim-surround'
 
 " color Theme
 Plug 'tomasiser/vim-code-dark'
-
 " Search File
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'

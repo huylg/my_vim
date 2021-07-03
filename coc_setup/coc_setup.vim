@@ -1,3 +1,12 @@
+
+let g:coc_global_extensions = [
+	\'coc-flutter',
+	\'coc-highlight',
+	\'coc-snippet',
+	\'coc-bloc'
+	\]
+
+
 let b:coc_diagnostic_disable = 1
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
