@@ -2,7 +2,7 @@
 let g:coc_global_extensions = [
 	\'coc-flutter',
 	\'coc-highlight',
-	\'coc-snippet',
+	\'coc-snippets',
 	\'coc-bloc'
 	\]
 
