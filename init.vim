@@ -11,10 +11,8 @@ source $HOME/.config/nvim/float_term_setup/float_term_setup.vim
 source $HOME/.config/nvim/maximizer_setup/maximizer_setup.vim
 source $HOME/.config/nvim/undotree_setup/undotree_setup.vim
 source $HOME/.config/nvim/rest_console_setup/rest_console_setup.vim
-source $HOME/.config/nvim/cursor_line.vim
-source $HOME/.config/nvim/color_scheme.vim
-source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 source $HOME/.config/nvim/git_messenger_setup/git_messenger_setup.vim
+source $HOME/.config/nvim/blamer_setup/blamer_setup.vim
 "source $HOME/.config/nvim/dap_setup/dap_setup.vim
 
 lua << EOF
@@ -78,8 +76,12 @@ let g:dart_format_on_save = 1
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+
+source $HOME/.config/nvim/cursor_line.vim
 set number
 set relativenumber
+source $HOME/.config/nvim/color_scheme.vim
+source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 
 " shortcut for save
 noremap <Leader>s :update<CR>
@@ -92,12 +94,11 @@ nnoremap te :tabnew .<CR>
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
-
-command GuiToogle set termguicolors!
-
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dP
+
+command GuiToogle set termguicolors!
 
 set spelllang=en
 nnoremap <F12> :set spell!<cr>

@@ -37,7 +37,7 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 " git
 Plug 'airblade/vim-gitgutter'
-Plug 'f-person/git-blame.nvim'
+Plug 'APZelos/blamer.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'rhysd/git-messenger.vim'
 
