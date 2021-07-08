@@ -43,12 +43,15 @@ Plug 'rhysd/git-messenger.vim'
 
 " snippets
 Plug 'honza/vim-snippets'
-Plug 'Neevash/awesome-flutter-snippets'
 
 " dart
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'akinsho/dependency-assist.nvim'
-			
+Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
+Plug 'akinsho/dependency-assist.nvim', { 'for': 'dart' }
+Plug 'Neevash/awesome-flutter-snippets', { 'for': 'dart' }
+
+" reason
+Plug 'rescript-lang/vim-rescript'
+
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fannheyward/telescope-coc.nvim'
