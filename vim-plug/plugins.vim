@@ -28,7 +28,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
-Plug 'brooth/far.vim'
 
 " devicons
 Plug 'ryanoasis/vim-devicons'
@@ -50,15 +49,13 @@ Plug 'akinsho/dependency-assist.nvim', { 'for': 'dart' }
 Plug 'Neevash/awesome-flutter-snippets', { 'for': 'dart' }
 
 " coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'fannheyward/telescope-coc.nvim'
+Plug 'neoclide/coc.nvim', {'commit': '891d1687ac3aa8ae2c5d92cb5cf0bb8c736bf0f1'}
 
 " tab bar
 Plug 'romgrk/barbar.nvim'
 
 " airline
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 " http client
 Plug 'baverman/vial'
