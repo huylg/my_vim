@@ -17,7 +17,11 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " color Theme
-Plug 'tomasiser/vim-code-dark'
+Plug 'Mofiqul/vscode.nvim'
+
+" Tree sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
 " Search File
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -45,7 +49,7 @@ Plug 'honza/vim-snippets'
 
 " dart
 Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
-Plug 'akinsho/dependency-assist.nvim', { 'for': 'dart' }
+Plug 'f-person/pubspec-assist-nvim'
 Plug 'Neevash/awesome-flutter-snippets', { 'for': 'dart' }
 
 " coc
@@ -55,7 +59,7 @@ Plug 'neoclide/coc.nvim', {'commit': '891d1687ac3aa8ae2c5d92cb5cf0bb8c736bf0f1'}
 Plug 'romgrk/barbar.nvim'
 
 " airline
-Plug 'vim-airline/vim-airline'
+Plug 'hoob3rt/lualine.nvim'
 
 " http client
 Plug 'baverman/vial'
@@ -83,5 +87,6 @@ Plug 'szw/vim-maximizer'
 Plug 'simeji/winresizer'
 
 " debug 
-"Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-telescope/telescope-dap.nvim'
 call plug#end()

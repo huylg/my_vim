@@ -12,11 +12,30 @@ source $HOME/.config/nvim/undotree_setup/undotree_setup.vim
 source $HOME/.config/nvim/rest_console_setup/rest_console_setup.vim
 source $HOME/.config/nvim/git_messenger_setup/git_messenger_setup.vim
 source $HOME/.config/nvim/blamer_setup/blamer_setup.vim
-"source $HOME/.config/nvim/dap_setup/dap_setup.vim
+source $HOME/.config/nvim/dap_setup/dap_setup.vim
 
 lua << EOF
-  require'dependency_assist'.setup{}
+require'nvim-treesitter.configs'.setup {
+	highlight = {    
+		enable = true,
+	},
+	keymaps = {
+      	 init_selection = "gnn",
+      	 node_incremental = "grn",
+      	 scope_incremental = "grc",
+      	 node_decremental = "grm",
+        },
+}
+  require('lualine').setup {
+    options = {
+      theme = 'vscode',
+      icons_enabled = true,
+      component_separators = {'|', '|'},
+    },
+    sections = {lualine_c = {'filename','g:coc_status', 'bo:filetype'}}
+   }
   require'telescope'.setup{}
+  require('telescope').load_extension('dap')
   require'nvim-web-devicons'.setup {
   override = {
    zsh = {
