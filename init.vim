@@ -6,13 +6,12 @@ source $HOME/.config/nvim/coc_setup/coc_setup.vim
 source $HOME/.config/nvim/easymotion_setup/easymotion_setup.vim
 source $HOME/.config/nvim/barbar_setup/barbar_setup.vim
 source $HOME/.config/nvim/test_vim_setup/test_vim_setup.vim
-source $HOME/.config/nvim/float_term_setup/float_term_setup.vim
 source $HOME/.config/nvim/maximizer_setup/maximizer_setup.vim
 source $HOME/.config/nvim/undotree_setup/undotree_setup.vim
 source $HOME/.config/nvim/rest_console_setup/rest_console_setup.vim
 source $HOME/.config/nvim/git_messenger_setup/git_messenger_setup.vim
 source $HOME/.config/nvim/blamer_setup/blamer_setup.vim
-source $HOME/.config/nvim/dap_setup/dap_setup.vim
+source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 
 lua << EOF
 require'nvim-treesitter.configs'.setup {
@@ -35,7 +34,6 @@ require'nvim-treesitter.configs'.setup {
     sections = {lualine_c = {'filename','g:coc_status', 'bo:filetype'}}
    }
   require'telescope'.setup{}
-  require('telescope').load_extension('dap')
   require'nvim-web-devicons'.setup {
   override = {
    zsh = {
@@ -98,7 +96,6 @@ source $HOME/.config/nvim/cursor_line.vim
 set number
 set relativenumber
 source $HOME/.config/nvim/color_scheme.vim
-source $HOME/.config/nvim/gitgutter_setup/gitgutter_setup.vim
 
 " shortcut for save
 noremap <Leader>s :update<CR>

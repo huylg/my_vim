@@ -51,6 +51,7 @@ Plug 'honza/vim-snippets'
 Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 Plug 'f-person/pubspec-assist-nvim'
 Plug 'Neevash/awesome-flutter-snippets', { 'for': 'dart' }
+Plug 'huylg/built-value-snippets'
 
 " coc
 Plug 'neoclide/coc.nvim', {'commit': '891d1687ac3aa8ae2c5d92cb5cf0bb8c736bf0f1'}
@@ -74,9 +75,6 @@ Plug 'preservim/nerdcommenter'
 " multi cursor
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-" float tearminal``
-Plug 'voldikss/vim-floaterm'
-
 " test vim
 Plug 'vim-test/vim-test'
 
@@ -86,7 +84,4 @@ Plug 'szw/vim-maximizer'
 " window resize
 Plug 'simeji/winresizer'
 
-" debug 
-Plug 'mfussenegger/nvim-dap'
-Plug 'nvim-telescope/telescope-dap.nvim'
 call plug#end()
