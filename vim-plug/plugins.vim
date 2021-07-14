@@ -44,7 +44,7 @@ Plug 'APZelos/blamer.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'rhysd/git-messenger.vim'
 
-" snippets
+" common snippets snippets
 Plug 'honza/vim-snippets'
 
 " dart

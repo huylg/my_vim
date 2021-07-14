@@ -33,7 +33,21 @@ require'nvim-treesitter.configs'.setup {
     },
     sections = {lualine_c = {'filename','g:coc_status', 'bo:filetype'}}
    }
-  require'telescope'.setup{}
+local actions = require('telescope.actions')
+require('telescope').setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<C-w>"] = actions.send_selected_to_qflist,
+        ["<C-q>"] = actions.send_to_qflist,
+      },
+      n = {
+        ["<C-w>"] = actions.send_selected_to_qflist,
+        ["<C-q>"] = actions.send_to_qflist,
+      },
+    },
+  }
+}
   require'nvim-web-devicons'.setup {
   override = {
    zsh = {

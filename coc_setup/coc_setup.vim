@@ -72,6 +72,9 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gds :call CocAction('jumpDefinition', 'split')<CR>
+nmap <silent> gdv :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> gdt :call CocAction('jumpDefinition', 'tabe')<CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
@@ -158,6 +161,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 "set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
+" Show coc list options.
+nnoremap <silent><nowait> <space>l  :<C-u>CocList<cr>
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
@@ -174,6 +179,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" Show flutter sdk list.
+nnoremap <silent><nowait> <space>f  :<C-u>CocList FlutterSDKs<cr>
 
 "shortcut for flutter command
 nnoremap <leader>fa :CocCommand flutter.run
